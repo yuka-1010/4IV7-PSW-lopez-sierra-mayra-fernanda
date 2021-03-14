@@ -35,8 +35,8 @@
 
 .label{
     width: 64px;
-    background-color: orangered;
-    color:palegoldenrod;
+    background-color: rgb(255, 132, 169);
+    color:rgb(255, 121, 121);
     font-size: 1.3rem;
     padding: 1rem;
     border-radius: 20px;
