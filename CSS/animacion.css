@@ -7,6 +7,7 @@
     }
 }
 
+/*Hacer que el círculo gire*/
 @keyframes girar{
     from{
         transform: rotate(0deg);
@@ -16,11 +17,13 @@
     }
 }
 
+/*Carita kawaii uwu*/
 @keyframes label-animation{
     from{
         transform: rotate(0deg);
         margin-left: 0;
     }
+
     to{
         transform: rotate(180deg);
         margin-left: 85vw;
@@ -35,12 +38,13 @@
 
 .label{
     width: 64px;
-    background-color: rgb(255, 132, 169);
-    color:rgb(255, 121, 121);
+    background-color: rgb(132, 161, 255);
+    color:rgb(246, 255, 208);
     font-size: 1.3rem;
     padding: 1rem;
     border-radius: 20px;
     text-align: center;
+    
     /*animación*/
     animation-name: label-animation;
     animation-duration: 2s;
@@ -52,8 +56,8 @@
 .loader{
     width: 64px;
     height: 64px;
-    border: 5px solid red;
-    border-top: 5px solid pink;
+    border: 5px solid rgb(194, 88, 255);
+    border-top: 5px solid rgb(182, 250, 255);
     border-radius: 50%;
     animation: girar 2s linear infinite;
 }
@@ -61,16 +65,16 @@
 .loader-double{
     width: 64px;
     height: 64px;
-    border: 16px solid peru;
-    border-top: 16px solid paleturquoise;
-    border-bottom: 16px solid black;
+    border: 16px solid rgb(95, 126, 212);
+    border-top: 16px solid rgb(225, 175, 238);
+    border-bottom: 16px solid rgb(196, 196, 196);
     border-radius: 50%;
     animation: girar 2s ease-in-out infinite;
 }
 
 .animada{
     width: 100%;
-    background-color: red;
+    background-color: rgb(69, 148, 194);
     color: white;
     text-align: center;
     height: 200px;
