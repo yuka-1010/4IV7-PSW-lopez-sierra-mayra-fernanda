@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 01</title>
+    <link rel="stylesheet" href="CSS/problema01.css">
+    <script src="JS/problema01.js"></script>
+
+</head>
+<body>
+    <h1><p>Suponga que un individuo desea invertir su capital en un banco
+        y desea saber cuanto dinero ganara después de un mes si el banco
+        paga a razón de 2% mensual.</p></h1>
+        <br>
+    <form method="POST" name="formulario">
+        <table align="center" border="1">
+            <tr>
+                <td class="td_up">Introduce la cantidad a invertir: $</td>
+                <td class="td_down"><input type="text" name="cantidad"
+                onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"><input type="button" value="Interes"
+                name="enviar" onclick="interes()"></td>
+            </tr>
+            <tr>
+                <td class="td_up">Su saldo total con interés del 2% mensual es de:</td>
+                <td class="td_down"><input type="text" name="sueldoti"
+                    id="cantidadti" readonly="readonly"
+                    class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"><input type="button" name="borrard"
+                    value="Borrar" onclick="borrar()"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_up"><input type="button" name="enviar"
+                    value="Enviar" onclick=""></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <a href="formulario.html">Regresar</a>
+</body>
+</html>
