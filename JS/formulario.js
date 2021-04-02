@@ -9,7 +9,7 @@ function validar(formulario){
     //obtener los valores del formulario
     if(formulario.nombre.value.length < 5){
         alert("Escribe más de 5 carácteres en el campo nombre");
-        formulario.Nombre.focus();
+        formulario.nombre.focus();
     return false;
     }
 
@@ -20,12 +20,13 @@ function validar(formulario){
     var checkOK = "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
     + "abcdefghijklmnñopqrstuvwxyz";
 
-    var checkStr = formulario.Nombre.value;
+    var checkStr = formulario.nombre.value;
 
     var allvalid = true;
 
     for(var i = 0; i < checkStr.length; i++){
         var ch = checkStr.charAt(i);
+
         for(var j = 0; j < checkOK.length; j++)
         if(ch == checkOK.charAt(j))
             break;
@@ -37,14 +38,14 @@ function validar(formulario){
 
     if(!allvalid){
         alert("Escribe solo letras en el campo de nombre");
-        formulario.Nombre.focus();
+        formulario.nombre.focus();
         return false;
     }
 
     /* Vamos a validar la entrada de numeros */
     var checkOK = "1234567890";
 
-    var checkStr = formulario.Edad.value;
+    var checkStr = formulario.edad.value;
 
     var allvalid = true;
 
@@ -61,7 +62,7 @@ function validar(formulario){
 
     if(!allvalid){
         alert("Escribe solo números en el campo de edad");
-        formulario.Edad.focus();
+        formulario.edad.focus();
         return false;
     }
 
@@ -71,11 +72,10 @@ function validar(formulario){
     algo_algo@algo.algo.algo
     Se hace uso de expresiones regulares*/   
 
-    var txt = formulario.Email.value;
+    var txt = formulario.email.value;
 
     //patron
     var b = /^[^@\s]+@[^@\.\s]+(\.[^@\.\s]+)+$/;
-
     alert("Email " + (b.test(txt)?"":" no ") + "válido");
     return b.test(txt);
 }
