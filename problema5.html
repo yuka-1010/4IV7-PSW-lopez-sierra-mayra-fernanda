@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JS/problema5.js"></script>
+    <title>Problema 5</title>
+    <link rel="stylesheet" href="CSS/problema01.css">
+</head>
+<body>
+    <h3><p>Un maestro desea saber que porcentaje de hombres y mujeres hay en un grupo
+        de estudiantes.
+    </p></h3>
+    <br>
+    <form name="maestro">
+    <table align="center" border="1">
+        <tr>
+            <td class="td_sup">Ingrese el número total de alumnos: </td>
+            <td class="td_inf"><input type="text" name="total" onkeypress="return validarn(event)"></td>
+        </tr>
+        <tr>
+            <td class="td_sup">Ingrese el número de mujeres que hay en el grupo:</td>
+            <td class="td_inf"><input type="text" name="mujeres" onkeypress="return validarn(event)"></td>
+        </tr>
+        <tr>
+            <td class="td_sup">Ingrese el número de hombres en el grupo: </td>
+            <td class="td_inf"><input type="text" name="hombres" onkeypress="return validarn(event)"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="td_inf"><input type="button" value="Porcentajes totales"
+                name="comisiones" onclick="porcentaje()"></td>
+        </tr>
+        <tr>
+            <td class="td_sup">El porcentaje de mujeres es:</td>
+            <td class="td_inf"><input type="text" name="m"
+                id="cantidadmes" readonly="readonly"
+                class="input_text"></td>
+        </tr>
+        <tr>
+            <td class="td_sup">El porcentaje de hombres es:</td>
+            <td class="td_inf"><input type="text" name="h"
+                id="cantidadmes" readonly="readonly"
+                class="input_text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="td_inf"><input type="button" name="borrard"
+                value="Borrar" onclick="borrar()"></td>
+        </tr>
+    </table>
+    </form>
+    <br>
+    <a href="problemas.html">Regresar</a>
+</body>
+</html>

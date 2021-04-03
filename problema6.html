@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 6</title>
+    <script src="JS/problema6.js"></script>
+    <link rel="stylesheet" href="CSS/problema01.css">
+</head>
+<body>
+    <h3><p>Realizar el algoritmo que calcule la edad de una persona.
+    </p></h3>
+    <br>
+    <form name="edades">
+        <center><p>Recuerda ingresar solo el número</p></center>
+        <table align="center" border="1">
+            <tr>
+                <td><p>¿Qué película prefieres?</p>
+                    <p>1) El lorax</p>
+                    <p>2) Chicas pesadas</p>
+                    <p>3) Vaselina</p></td>
+                    <td class="td_inf"><input type="text" name="pelicula" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td><p>¿Qué canción prefieres?</p>
+                    <p>1) La vaca Lola</p>
+                    <p>2) Happy</p>
+                    <p>3) Un siglo sin ti</p></td>
+                    <td class="td_inf"><input type="text" name="cancion" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td><p>¿Ves caricaturas?</p>
+                    <p>1) Sí</p>
+                    <p>2) Más o menos</p>
+                    <p>3) No</p></td>
+                    <td class="td_inf"><input type="text" name="caricaturas" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td><p>¿Qué tipo de mascotas prefieres?</p>
+                    <p>1) Alegres y juguetones</p>
+                    <p>2) Tiernos y cariñosos</p>
+                    <p>3) Tranquilas</p></td>
+                    <td class="td_inf"><input type="text" name="mascota" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td><p>¿A dónde irías de vacaciones?</p>
+                    <p>1) Cine</p>
+                    <p>2) Parque de diversiones</p>
+                    <p>3) Teatro</p></td>
+                    <td class="td_inf"><input type="text" name="vacaciones" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="Calcula tu rango de edad"
+                    name="caledad" onclick="com()"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Tu rango de edad es::</td>
+                <td class="td_inf"><input type="text" name="edad"
+                    id="rango" readonly="readonly"
+                    class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" name="borrard"
+                    value="Borrar" onclick="borrar()"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <a href="problemas.html">Regresar</a>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <script src="JS/problema4.js"></script>
+    <link rel="stylesheet" href="CSS/problema01.css">
+</head>
+<body>
+    <h3><p>Un alumno desea saber cual será su calificación final en la materia
+        de Algoritmos. Dicha calificación se compone de los siguientes porcentajes:</p>
+        <p>55% del promedio de sus tres calificaciones parciales.</p>
+        <p>30% de la calificación del examen final.</p>
+        <p>15% de la calificación de un trabajo final.</p></h3>
+
+    <form name="calificacion">
+        <table align="center" border="1">
+            <tr>
+                <td class="td_sup">Ingrese el promedio de los tres parciales: </td>
+            <td class="td_inf"><input type="text" name="parciales" onkeypress="return validarn(event)"></td>
+            </tr>
+        <tr>
+            <td class="td_sup">Ingrese calificación del examen final:</td>
+            <td class="td_inf"><input type="text" name="examen" onkeypress="return validarn(event)"></td>
+        </tr>
+        <tr>
+            <td class="td_sup">Ingrese la calificacióndel trabajo final: </td>
+            <td class="td_inf"><input type="text" name="trabajo" onkeypress="return validarn(event)"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="td_inf"><input type="button" value="Calificación final"
+                name="final" onclick="calif()"></td>
+        </tr>
+        <tr>
+            <td class="td_sup">La calificación final es:</td>
+            <td class="td_inf"><input type="text" name="calificacionfinal"
+                id="cantidadmes" readonly="readonly"
+                class="input_text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="td_inf"><input type="button" name="borrard"
+                value="Borrar" onclick="borrar()"></td>
+        </tr>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <a href="problemas.html">Regresar</a>
+</body>
+</html>

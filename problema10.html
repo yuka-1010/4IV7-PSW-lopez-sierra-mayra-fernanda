@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 10</title>
+    <script src="JS/problema10.js"></script>
+    <link rel="stylesheet" href="CSS/problema01.css">
+</head>
+<body>
+    <h3><p>Calcular la utilidad que un trabajador recibe en el reparto anual de utilidades
+        si este se le asigna como un porcentaje de su salario mensual que depende de su antiguedad
+        en la empresa de acuerdo con la sig. Tabla:</p>
+        <p>Tiempo ----- Utilidad</p>
+        <p>Menos de un año ----- 5% del salario</p>
+        <p>1 año o más y menos de 2 años ----- 7% del salario</p>
+        <p>2 años o más o menos de 5 años ----- 10% del salario</p>
+        <p>5 años o más o menos de 10 años ----- 15% del salario</p>
+        <p>10 años o más ----- 20% del salario</p>
+    </h3>
+    <br>
+    <form name="trabajador">
+        <table align="center" border="1">
+            <tr>
+                <td class="td_sup">Ingrese la antiguedad (en años): </td>
+                <td class="td_inf"><input type="text" name="viejo" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Ingrese el salario: </td>
+                <td class="td_inf"><input type="text" name="salario" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="Utilidad"
+                    name="final" onclick="calcular()"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">La utilidad obtenida es:</td>
+                <td class="td_inf"><input type="text" name="utilidadfinal"
+                    id="cantidad" readonly="readonly"
+                    class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" name="borrard"
+                    value="Borrar" onclick="borrar()"></td>
+            </tr>
+                </tr>
+        </table>
+    </form>
+    <br>
+    <a href="problemas.html">Regresar</a>
+</body>
+</html>

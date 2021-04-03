@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 9</title>
+    <script src="JS/problema9.js"></script>
+    <link rel="stylesheet" href="CSS/problema01.css">
+</head>
+<body>
+    <h3><p>Determina la cantidad de dinero que recibirá un trabajador por concepto de las horas extras trabajadas
+        en una empresa, sabiendo que cuando las horas de trabajo exceden de 40, el resto se consideran horas extras
+        y que estas se pagan al doble de una hora normal cuando no exceden de 8 horas; si las horas extras exceden
+        de 8, se pagan las primeras 8 al doble de lo que se pagan las horas normales y el resto al triple.
+    </p></h3>
+    <br>
+    <form name="empresa">
+        <table align="center" border="1">
+            <tr>
+                    <td class="td_sup">Introduce el número total de horas trabajadas: </td>
+                    <td class="td_inf"><input type="text" name="normal" onkeypress="return validarn(event)"></td>
+            </tr>
+
+            <tr>
+                <td class="td_sup">Introduce tu sueldo: </td>
+                <td class="td_inf"><input type="text" name="sueldo" onkeypress="return validarn(event)"></td>
+            </tr>
+    
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="Cantidad de dinero"
+                name="cantidad" onclick="total()"></td>
+            </tr>
+            <tr>
+                <td class="td_up">El pago total es de: </td>
+                <td class="td_down"><input type="text" name="pago"
+                    id="pagototal" readonly="readonly"
+                    class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_down"><input type="button" name="borrard"
+                    value="Borrar" onclick="borrar()"></td>
+            </tr>
+        </table>
+        </form>
+        <br>
+    <a href="problemas.html">Regresar</a>
+</body>
+</html>
