@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+    <script src="JS/problema2.js"></script>
+</head>
+<body>
+    <h3><p>Un vendedor recibe un sueldo base más un 10%
+        extra por comisión de sus ventas, el vendedor desea
+        saber cuanto dinero obtendrá por concepto de comisiones
+        por las tres ventas que realiza en el mes y el total
+        en el mes tomando en cuenta el sueldo base y comisiones.
+    </p></h3>
+        <br>
+        <form method="POST" name="vendedor">
+        <table align="center" border="1">
+            <tr>
+                <td class="td_sup">Introduce el sueldo base de la primera venta: $</td>
+                <td class="td_inf"><input type="text" name="sueldo1" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Introduce el sueldo base de la segunda venta: $</td>
+                <td class="td_inf"><input type="text" name="sueldo2" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Introduce el sueldo base de la tercera venta: $</td>
+                <td class="td_inf"><input type="text" name="sueldo3" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="Sueldo total del mes"
+                    name="comisiones" onclick="com()"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Su sueldo total del mes es:</td>
+                <td class="td_inf"><input type="text" name="sueldomes"
+                    id="cantidadmes" readonly="readonly"
+                    class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" name="borrard"
+                    value="Borrar" onclick="borrar()"></td>
+            </tr>
+        </table>
+        </form>
+</body>
+</html>
