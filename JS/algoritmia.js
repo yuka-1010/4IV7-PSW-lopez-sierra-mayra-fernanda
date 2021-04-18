@@ -1,11 +1,9 @@
 //problema 1
 
-
 function problema1(){
     var p1_input = document.querySelector('#p1-input').value;
 
     //tenemos que detectar el espacio, tendría que dividir la cadena y colocarla dentro de un array
-
     var p1_array = p1_input.split(' ').reverse();
 
     var p1_res = '';
@@ -66,4 +64,45 @@ function problema2(){
 }
 
 
-//problema 3 queda de tarea
+//problema 3
+
+function problema3(){
+        var p3_input = document.querySelector('#p3-input').value;
+        var p3_array = p3_input.split(',');
+        var palabras = "";
+        p3_array.forEach(function (palabra){
+            if (palabra.length < palabras.length){
+                palabras = palabra
+            };
+        });
+
+        document.querySelector('#p3-output').textContent = palabras;
+    }
+
+
+//validación problema 1
+
+function validar(e){
+    var teclado = (document.all)?e.keyCode:e.which;
+
+    if( teclado == 8 ) return true;
+
+    var patron = /[A-Z\a-z .]/;
+
+    var prueba = String.fromCharCode(teclado);
+
+    return patron.test(prueba);
+}
+
+//validación problema 3
+function validarn(e){
+    var teclado = (document.all)?e.keyCode:e.which;
+
+    if( teclado == 8 ) return true;
+
+    var patron = /[A-Z\,]/;
+
+    var prueba = String.fromCharCode(teclado);
+
+    return patron.test(prueba);
+}
