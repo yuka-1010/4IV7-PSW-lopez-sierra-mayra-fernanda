@@ -65,7 +65,6 @@ function problema2(){
 
 
 //problema 3
-
 function problema3(){
         var p3_input = document.querySelector('#p3-input').value;
         var p3_array = p3_input.split(',');
